@@ -18,16 +18,9 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   p {
-    margin: 10px;
+    margin: 20px;
     text-transform: uppercase;
-  }
-}
-.header__right {
-  display: flex;
-  justify-content: flex-end;
-  text-transform: uppercase;
-  p {
-    margin: 10px;
   }
 }
