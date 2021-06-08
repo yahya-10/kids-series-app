@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Loader from "react-loader-spinner";
+import Slide from "react-reveal/Slide";
 
 import cupCake from "./assets/cupcake&dino-bg.jpg";
 import pierreRabbit from "./assets/pierre-rabbit-bg.jpg";
@@ -17,7 +18,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => setLoading(true), 6000);
   }, []);
-  const x = 50;
+  const x = 45;
   const y = 20;
   const styles = {
     marginTop: `${y}%`,
@@ -27,50 +28,48 @@ function App() {
     <>
       {loading ? (
         <div className="App">
-          <Header />
+          <Slide left>
+            <Header />
+          </Slide>
           <div className="App__container">
             <CartoonItem
               id="1"
               title="Cupcake And Dino"
               backgroundImg={cupCake}
-              // desc="this is desciption"
-              trailerButton="True"
+              trailerButton
               first
             />
             <CartoonItem
               id="2"
               title="Shaun the sheep"
               backgroundImg={shaun}
-              // desc="this is desciption"
-              trailerButton="True"
+              trailerButton
             />
             <CartoonItem
               id="3"
               title="Twirlywoos"
               backgroundImg={twirlywoos}
-              // desc="this is desciption"
-              trailerButton="True"
+              trailerButton
             />
 
             <CartoonItem
               id="4"
               title="Simon"
               backgroundImg={simon}
-              // desc="this is desciption"
+              trailerButton
             />
             <CartoonItem
               id="5"
               title="Spongebob squarepants"
               backgroundImg={spongebob}
-              // desc="this is desciption"
-              trailerButton="True"
+              trailerButton
             />
 
             <CartoonItem
               id="6"
               title="Pierre the Rabbit"
               backgroundImg={pierreRabbit}
-              // desc="this is desciption"
+              trailerButton
             />
           </div>
         </div>

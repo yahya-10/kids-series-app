@@ -8,14 +8,10 @@ const Header = () => {
         <h3>KidsHub</h3>
       </div>
       <div className="header__center">
-        <p>Home</p>
-        <p>Series</p>
-        <p>Support</p>
+        <a>Home</a>
+        <a>Series</a>
+        <a>Support</a>
       </div>
-      {/* <div className="header__right">
-        <p>Premium</p>
-        <p>Contact</p>
-      </div> */}
     </div>
   );
 };
